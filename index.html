@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>backbone stickit</title>
+<script src="jquery-1.10.2.min.js"></script>
+<script src="underscore.js"></script>
+<script src="backbone.js"></script>
+<script src="backbone.stickit.js"></script>
+</head>
+<body>
+<form id="filter">
+    <fieldset>
+        <legend>Actions</legend>
+        <div>
+            <input type="checkbox" id="action-sell" class="action" value="Sell">
+            <label for="action-sell">Sell</label>
+        </div>
+        <div>
+            <input type="checkbox" id="action-buy" class="action" value="Buy">
+            <label for="action-buy">Buy</label>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Order Type</legend>
+        <div>
+            <input type="radio" id="order-type-market" name="order-type" class="order-type" value="Market">
+            <label for="order-type-market">Market</label>
+        </div>
+        <div>
+            <input type="radio" id="order-type-limit" name="order-type" class="order-type" value="Limit">
+            <label for="order-type-limit">Limit</label>
+        </div>
+    </fieldset>        
+</form>
+        
+<div id="output">
+    <p id="actions-value"></p>
+    <p id="order-type-value"></p>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
